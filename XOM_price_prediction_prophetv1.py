@@ -5,7 +5,7 @@ from datetime import datetime
 
 # Fetch historical stock data of XOM from Yahoo Finance
 ticker = "XOM"
-start_date = "2005-01-01"
+start_date = "2010-01-01"
 end_date = datetime.today().strftime('%Y-%m-%d')
 data = yf.download(ticker, start=start_date, end=end_date)
 
