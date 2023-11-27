@@ -18,7 +18,7 @@ mean_daily_return = data['Returns'].mean()
 std_dev_return = data['Returns'].std()
 
 # Set the number of simulations and the time horizon (days until 1 March 2024)
-num_simulations = 100000
+num_simulations = 10000
 days_to_predict = np.busday_count('2023-11-16', '2024-03-01')
 
 # Create an empty matrix to hold the simulation results
