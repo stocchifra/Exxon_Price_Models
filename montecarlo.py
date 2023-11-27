@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # Download historical data for Exxon Mobil Corporation (XOM) from Yahoo Finance
 ticker = 'XOM'
 end_date = pd.Timestamp.today().strftime('%Y-%m-%d')
-data = yf.download(ticker, start="2010-01-01", end=end_date)
+data = yf.download(ticker, start="2007-01-01", end=end_date)
 
 # Calculate daily returns
 data['Returns'] = data['Adj Close'].pct_change()
